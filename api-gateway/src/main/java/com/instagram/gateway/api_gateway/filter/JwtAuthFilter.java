@@ -26,7 +26,8 @@ public class JwtAuthFilter implements GlobalFilter, Ordered {
 
     private final List<String> openPaths = List.of(
             "/auth/register",
-            "/auth/login"
+            "/auth/login",
+            "/auth/health" 
     );
 
 

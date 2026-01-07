@@ -16,6 +16,11 @@ spring:
           predicates:
             - Path=/auth/**
 
+        - id: user-service
+          uri: http://localhost:8082
+          predicates:
+            - Path=/users/**
+
       globalcors:
         cors-configurations:
           '[/**]':
